@@ -22,6 +22,8 @@ ALTER TABLE horario_aula ADD FOREIGN KEY(idaula) REFERENCES aula (id);
 INSERT INTO aula (serie, turma, componente, professor) VALUES
 ("2°", "DSB", "Banco de Dados II", "Patrick")
 
-DELETE FROM aula WHERE ID = 2;
+DELETE FROM aula WHERE ID = 10;
 UPDATE aula SET professor = "Patrick"
-WHERE id = 27
+WHERE id = 2;
+
+SELECT * FROM aula WHERE professor="patrick";
